@@ -1,0 +1,24 @@
+.mb {
+
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.mb:hover {
+    background-color: darkgoldenrod;
+}
+
+#menu {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6%;
+    column-gap: 4%;
+    grid-area: auto;
+    grid-auto-rows: minmax(10px, auto);
+    width: 40%;
+    margin: auto;
+}
