@@ -35,7 +35,7 @@ function bkbtn() {
   const anim = document.getElementById("body");
   anim.classList.replace("text-focus-in", "text-blur-out");
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }, 1000);
 }
 
