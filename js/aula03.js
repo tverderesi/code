@@ -1,4 +1,6 @@
-function js_button() {
+// FUNCTIONS
+
+function ex01() {
   const nome = prompt("Qual é seu nome?");
   alert(`Olá, ${nome}! seja bem-vindo!`);
 
@@ -26,11 +28,6 @@ function js_button() {
     Aqui, temos o script que permite que o código seja carregado quando clicamos no botão "Clique aqui para executar o código."`;
 }
 
-let btn = document.getElementById("b01");
-btn.addEventListener("click", (event) => {
-  js_button();
-});
-
 function bkbtn() {
   const anim = document.getElementById("body");
   anim.classList.replace("text-focus-in", "text-blur-out");
@@ -39,7 +36,33 @@ function bkbtn() {
   }, 1000);
 }
 
+function ex02btn() {
+  const username = document.querySelector("#username").value;
+  alert(`Olá
+  ${username}, bem-vindo!`);
+  document.getElementById("loginform").style.display = "none";
+}
+
+// Calling Functions
+
+let ex01btn = document.getElementById("b01");
+ex01btn.addEventListener("click", () => {
+  ex01();
+});
+
 let back_btn = document.getElementById("back");
-back_btn.addEventListener("click", (event) => {
+back_btn.addEventListener("click", () => {
   bkbtn();
+});
+
+document.getElementById("btnc2").addEventListener("click", () => {
+  let a = document.getElementById("a02");
+  a.innerHTML = `
+  function ex02btn() { <br>
+    const username = document.querySelector("#username").value; <br>
+    alert(&#79;Olá {username}, bem-vindo!&#79;); <br>
+    document.getElementById("loginform").style.display = "none"; <br>
+  }`; //comentar o que o código faz
+  a.classList.remove("hidden");
+  document.getElementById("code02").classList.remove("noborder");
 });

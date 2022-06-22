@@ -12,7 +12,8 @@
 
 <body id="body" class="text-focus-in">
   <button id="back">&larr; </button>
-  <h1>JavaScript em Arquivos Externos</h1>
+  <h1>Aula 03</h1>
+  <h2>JavaScript em Arquivos Externos</h2>
 
   <p>Os scripts JavaScript também podem ser carregados em arquivos externos. Isso facilita a leitura
   do código HTML, uma vez que os scripts ficam escritos em um arquivo separado e carregá-lo
@@ -21,12 +22,35 @@
 
 
 
-
   <div id='ex01' class="simple_box noborder">
-    <button id="b01">Clique aqui para executar o código.</button>
+    <button id="b01">Executar Código</button>
     <p id="a01" class="hidden"></p>
   </div>
-  <script src="../js/script.js"></script>
+
+
+  <h1>Aula 04</h1>
+  <h2>Alterando Estilo e Uso de Comentários</h2>
+
+  <p>Os scripts JavaScript também podem ser utilizados para alterar estilos. Observe o formulário
+  abaixo:
+  </p>
+  <div id="ex02" class="simple_box">
+    <form onsubmit="ex02btn()" id="loginform">
+      <input type="text" id="username" name="" placeholder="username">
+      <input type="password" id="password" placeholder="password">
+      <button type="submit">Enter</button>
+    </form>
+  </div>
+  <p>Ao submeter o formulário, ele nos dá boas-vindas e esconde o formulário. Clique no botão para
+  exibir o script.</p>
+
+
+  <div id="code02" class="simple_box noborder">
+    <button type='button' id="btnc2">Executar Código</button>
+    <p id="a02" class="hidden"></p>
+  </div>
+
+  <script src="../js/aula03.js"></script>
 </body>
 
 </html>
