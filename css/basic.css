@@ -10,16 +10,27 @@ a {
     font-weight: bold;
 }
 
+article {
+    width: 75%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     font-family: 'Roboto-mono', monospace;
     background-color: black;
     color: white;
     color-scheme: dark;
     size: 12px;
-    margin-left: 30px;
+    justify-content: center;
     line-height: 1.5;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 p {
@@ -137,6 +148,8 @@ button {
     font-size: 14px;
     font-size: 25px;
     box-sizing: border-box;
+    margin: 10px auto;
+    vertical-align: text-top;
 }
 
 /* Animation */

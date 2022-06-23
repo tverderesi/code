@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/basic.css">
+</head>
+
+<body class="text-focus-in">
+    <button id="back">&larr; </button>
+    <h1>Aula 06-07</h1>
+    <h2 id="title">Operadores</h2>
+    <hr>
+    <article>
+        <h3>Operadores Aritméticos</h3>
+
+        <h4>Soma</h4>
+        <ul>
+            <li>Representado por <code>+</code>, por exemplo: <code>let a = 2 + 3;</code>, que
+                retorna 5;</li>
+            <li>A soma pode ser utilizada para concatenar strings: <code>let msg = 'Olá' +
+            'Marilene'</code>. Isto é extremamente útil quando trabalhamos com funções;
+            </li>
+
+            <li>Se utilizarmos o operador <code>+=</code>, adicionamos o valor já existente naquela
+                variável pelo valor depois do igual. No exemplo:<code>let a = 3; a +=2</code>, o valor
+                de a se torna 5, pois o valor 3 já havia sido armazenado naquela variável e foi utlizado
+                para a adição.</li>
+
+        </ul>
+
+        <h4>Subtração</h4>
+        <ul>
+            <li>Representado por <code>-</code>, ele executa a operação inversa da soma, ou seja, no
+                exemplo <code>let a = 2 - 3</code>, a valeria -1.;</li>
+            <li>No entanto, a subtração não pode ser utilizada para subtrair strings. No exemplo
+                <code>
+        "1" + 1
+</code>, ele irá concatenar o primeiro 1 com o segundo, pois "1" é tratado como uma string. Se
+                fizéssemos <code>"1" - 1 </code>, o resultado será 0, pois ele converte "1" para um número;
+            </li>
+        </ul>
+
+        <h4>Multiplicação</h4>
+        <ul>
+            <li>Reperesentada por <code>*</code>, serve para multiplicar números, por exemplo
+                <code>let a = 2 * 3;</code> retorna o valor de a como 6;
+            </li>
+
+            <li>Se utilizarmos o operador <code>*=</code>, multiplicamos o valor já existente
+                naquela variável pelo valor depois do igual. No exemplo:<code>let a = 3; a*=2</code>, o
+                valor de a se torna 6, pois o valor 3 já havia sido armazenado naquela variável e foi
+                utlizado para a multiplicação.</li>
+        </ul>
+
+        <h4>Divisão</h4>
+        <ul>
+            <li>Divisão com decimais: Representada por <code>/</code>, serve para dividir dois
+                números, por exemplo, <code>let a = 2 / 3;</code> retorna o valor de a como
+                0.66666;</li>
+            <li>Inteiro da divisão: Reperesentado por <code>~~(divisão)</code>, onde <i>divisão</i>
+                é uma expressão do tipo <code>a/b</code>. No exemplo <code>let a = ~~(9/2)</code>, o
+                valor de a é 4;</li>
+            <li>Resto da divisão: Representado por <code>%</code>. No exemplo <code>let a =
+            9%2</code>, o valor de a é 1;</li>
+        </ul>
+
+        <h4>Potenciação</h4>
+        <ul>
+            <li>Representada por <code>**</code>. No exemplo <code>let a = 2 ** 3;</code> retorna o
+                valor de a como 8;</li>
+            <li>Se utilizarmos o operador <code>**=</code>, o valor já existente
+                naquela variável será elevado a potência do valor depois do igual. No
+                exemplo:<code>let a = 3; a**=2</code>, o
+                valor de a se torna 9, pois o valor 3 já havia sido armazenado naquela variável e foi
+                utlizado para a como base da potenciação.</li>
+        </ul>
+
+    </article>
+    <article>
+        <h3>Operadores Relacionais</h3>
+        <h4>Maior que</h4>
+
+        <li>Representada por <code>></code>. No exemplo <code>let a = 2 ** 3;</code> retorna o
+            valor de a como 8;</li>
+    </article>
+    <script src="../js/basic.js"></script>
+</body>
+
+</html>
