@@ -11,12 +11,21 @@
     background-color: darkgoldenrod;
 }
 
+.modulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+
+}
+
 #menu {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 6%;
-    column-gap: 4%;
+    gap: 15%;
+    column-gap: 2%;
     grid-area: auto;
     grid-auto-rows: minmax(10px, auto);
     width: 40%;
