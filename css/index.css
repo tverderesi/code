@@ -1,3 +1,17 @@
+body {
+
+    background-color: black;
+    color: white;
+    size: 12px;
+    align-items: stretch;
+    line-height: 1.5;
+    width: 95%;
+    height: 100vh;
+
+}
+
+
+
 .mb {
 
     font-size: 18px;
@@ -15,19 +29,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+}
 
+.menu {
+    display: flex;
+    height: 100%;
+    justify-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: max(1vw);
+    row-gap: 1vw;
 
 }
 
-#menu {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15%;
-    column-gap: 2%;
-    grid-area: auto;
-    grid-auto-rows: minmax(10px, auto);
-    width: 40%;
-    margin: auto;
+.button_subtitle {
+    font-size: .8rem;
+}
+
+.module_subtitle {
+    font-size: 1.5rem;
 }

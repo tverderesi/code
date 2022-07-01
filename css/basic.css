@@ -19,17 +19,15 @@ article {
 
 body {
     font-family: 'Roboto-mono', monospace;
+    display: grid;
+    grid-template-columns: 4% auto;
     background-color: black;
     color: white;
-    color-scheme: dark;
     size: 12px;
-    justify-content: center;
+    align-items: stretch;
     line-height: 1.5;
     width: 95%;
-    height: 100%;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100vh;
 
 }
 
@@ -47,6 +45,10 @@ code {
     background-color: rgb(39, 39, 39);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 h1 {
     text-align: center;
@@ -65,8 +67,7 @@ h2 {
 }
 
 hr {
-    margin-right: 30px;
-
+    width: 95%;
 }
 
 button {
@@ -77,9 +78,15 @@ button {
     border: transparent;
     font-weight: bold;
     font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
     padding: 5px;
+    align-self: flex-start;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
 }
 
 /*Basic Classes*/
@@ -150,6 +157,10 @@ button {
     box-sizing: border-box;
     margin: 10px auto;
     vertical-align: text-top;
+}
+
+.module_subtitle {
+    font-size: 1.5rem;
 }
 
 /* Animation */
