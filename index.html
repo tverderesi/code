@@ -11,24 +11,39 @@
 
 <body id="boday" class="text-focus-in">
 
-  <div></div>
-  <div class="modulo">
-    <h2>Módulo 07 <br><span class="module_subtitle">JavaScript</span></h2>
-    <h3></h3>
+  <nav>
+    <button class="navb">00</button>
+    <button onclick='coolnav(this)' class="navb">01</button>
+    <button onclick='coolnav(this)' class="navb">02</button>
+    <button onclick='coolnav(this)' class="navb">03</button>
+    <button onclick='coolnav(this)' class="navb">04</button>
+    <button onclick='coolnav(this)' class="navb">05</button>
+    <button onclick='coolnav(this)' class="navb">06</button>
+    <button onclick='coolnav(this)' class="navb">07</button>
+    <button onclick='coolnav(this)' class="navb">08</button>
+    <button onclick='coolnav(this)' class="navb">09</button>
+  </nav>
 
-    <main id="mod07" class="menu">
-      <button id="Aula0702" class="mb" onclick="getid(this)">Aula 01-02 <br> <span
-      class="button_subtitle" type="button">Introdução</span></button>
-      <button id="Aula0703" class="mb" onclick="getid(this)">Aula 03-04 <br> <span
-      class="button_subtitle" type="button">Arquivos Externos</span></button>
-      <button id="Aula0705" class="mb" onclick="getid(this)">Aula 05 <br> <span
-      class="button_subtitle" type="button">Subtitulo</span></button>
-      <button id="Aula0706" class="mb" onclick="getid(this)">Aula 06-07 <br> <span
-      class="button_subtitle" type="button">Subtitulo</span></button>
+  <main class="menu">
+    <main class="modulo">
+      <h2>Módulo 07 <br><span class="module_subtitle">JavaScript</span></h2>
+      <div class="buttons">
 
+        <button id="0702" onclick="getid(this)" type="button">Aula 01-02 <br>
+          <span>Introdução</span></button>
+        <button id="0703" onclick="getid(this)" type="button">Aula 03-04 <br> <span>Arquivos
+        Externos</span></button>
+        <button id="0705" onclick="getid(this)" type="button">Aula 05 <br>
+          <span>Subtitulo</span></button>
+        <button id="0706" onclick="getid(this)" type="button">Aula 06-07 <br>
+          <span>Subtitulo</span></button>
+      </div>
     </main>
 
-    <script src="./js/index.js"></script>
+
+  </main>
+
+  <script src="./js/index.js"></script>
   </div>
 
 

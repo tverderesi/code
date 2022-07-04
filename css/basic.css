@@ -1,6 +1,9 @@
 /* Basic Elements */
+
+
+
 a {
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     text-decoration: none;
     border-radius: 3px;
@@ -8,46 +11,6 @@ a {
     padding: 1px;
     margin-top: 1px;
     font-weight: bold;
-}
-
-article {
-    width: 75%;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body {
-    font-family: 'Roboto-mono', monospace;
-    display: grid;
-    grid-template-columns: 4% auto;
-    background-color: black;
-    color: white;
-    size: 12px;
-    align-items: stretch;
-    line-height: 1.5;
-    width: 95%;
-    height: 100vh;
-
-}
-
-p {
-    width: 80%;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-code {
-    size: 12px;
-    font-style: italic;
-    font-family: 'Roboto-mono', monospace;
-    background-color: rgb(39, 39, 39);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
 }
 
 h1 {
@@ -60,67 +23,33 @@ h1 {
 
 h2 {
     text-align: center;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 2.5rem;
     line-height: 1;
 
 }
 
 hr {
-    width: 95%;
+    width: inherit;
 }
 
-button {
-    font-family: 'Roboto-mono', monospace;
-    background-color: white;
+.mb {
+    background-color: whitesmoke;
     border-radius: 3px;
-    color: black;
+    color: #222222;
     border: transparent;
     font-weight: bold;
     font-size: 1rem;
     padding: 5px;
     align-self: flex-start;
+    height: 100%;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-
-}
 
 /*Basic Classes*/
-.text {
-    box-sizing: border-box;
-    margin-left: 30px;
-}
-
-
-.simple_box {
-    border: 1px white solid;
-    border-radius: 15px;
-    width: 90%;
-    min-height: 1em;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .rounded_border {
     border-radius: 15px;
-}
-
-.fancy_text {
-    font-family: 'Joan', serif;
-    text-align: justify;
-
-}
-
-.fancy_text h4 {
-    font-size: large;
 }
 
 .clearfix {
@@ -131,13 +60,6 @@ nav {
     content: "";
     clear: both;
     display: table;
-}
-
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 .hidden {
@@ -151,16 +73,10 @@ nav {
 
 /* ID */
 
-#back {
-    font-size: 14px;
-    font-size: 25px;
-    box-sizing: border-box;
-    margin: 10px auto;
-    vertical-align: text-top;
-}
 
 .module_subtitle {
     font-size: 1.5rem;
+
 }
 
 /* Animation */

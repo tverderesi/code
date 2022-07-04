@@ -1,27 +1,79 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-    background-color: black;
-    color: white;
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+#mod {
+
+
     size: 12px;
     align-items: stretch;
     line-height: 1.5;
-    width: 95%;
     height: 100vh;
 
 }
 
+body {
+    display: grid;
+    grid-template-columns: 5vw auto 5vw;
+    size: 12px;
+    line-height: 1.5;
+    width: 100vw;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 
 
-.mb {
+}
 
-    font-size: 18px;
+nav>button {
+    font-size: xx-large;
+    background-color: whitesmoke;
+    color: #222222;
+    width: 100%;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    justify-content: space-around;
+    padding: .08vh;
+    margin-top: .1vh;
+    margin-bottom: .1vh;
+    font-weight: 900;
+}
+
+nav>button:hover::after {
+    background-color: darkgoldenrod;
+    content: "Módulo";
+}
+
+hr {
+
+    height: .05vh;
+    background-color: whitesmoke;
+}
+
+.buttons>button {
+    color: #222222;
+    background-color: whitesmoke;
+    border: none;
     padding: 15px;
     border-radius: 15px;
     width: 150px;
     box-sizing: border-box;
+    font-weight: bolder;
 }
 
-.mb:hover {
+.buttons>button:hover {
     background-color: darkgoldenrod;
 }
 
@@ -31,21 +83,43 @@ body {
     align-items: center;
 }
 
-.menu {
-    display: flex;
-    height: 100%;
-    justify-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    column-gap: max(1vw);
-    row-gap: 1vw;
-
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    row-gap: 2vh;
+    grid-auto-rows: max-content;
+    margin-top: 3vh;
 }
 
-.button_subtitle {
+
+.buttons>button>span {
     font-size: .8rem;
+    background-color: transparent;
+    color: #222222;
+    font-weight: 600;
 }
 
 .module_subtitle {
     font-size: 1.5rem;
+}
+
+
+.pushoverfade {
+    -webkit-animation: 1s cubic-bezier(.55, .085, .68, .53) both;
+    animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+
+
+@keyframes pushoverfade {
+    0% {
+
+        opacity: 100;
+    }
+
+    100% {
+        transform: translate(0, 20%);
+        opacity: 0;
+    }
 }
